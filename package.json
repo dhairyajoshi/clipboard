@@ -4,7 +4,8 @@
   "description": "clipboard to help you with your labs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app.js"
   },
   "author": "Dhairya Joshi",
   "license": "ISC",
