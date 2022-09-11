@@ -3,8 +3,6 @@ const postController = require("../controllers/postcontroller");
 const router = express.Router();
 
 router.post("/", postController.post);
-router.get('/',(req,res,next)=>{
-    res.send('ok')
-})
+router.get('/',postController.get)
 
 module.exports=router
