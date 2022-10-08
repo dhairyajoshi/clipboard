@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const app = express()
 const port = process.env.PORT | 3000
 const post= require('./api/routes/post')
+const user= require('./api/routes/users')
 require('dotenv').config()
 app.use(express.json())
 app.use((req, res, next) => {
@@ -23,6 +24,7 @@ app.use((req, res, next) => {
   );
 
 app.use('/post',post)
+app.use('/user',user)
 
 app.listen(port,()=>{
     console.log('listening on port '+port)
